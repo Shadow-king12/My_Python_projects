@@ -7,7 +7,7 @@ x=random.randint(75,250)
 
 win=graphics.GraphWin("Shadow noise tries",700,500)
 def line():
-    l1="Shadow Noise"
+
     
     p1=graphics.Point(400,0)
     p2=graphics.Point(410,500)
@@ -24,6 +24,7 @@ def line():
     label1.draw(win)
     label2.draw(win)"""
 def shadow_noise(x):
+    #startinf the generation!
     y=0
     p1=graphics.Point(x,y)
     p2=graphics.Point(0,y)
@@ -33,12 +34,12 @@ def shadow_noise(x):
     l.draw(win)
 
     while y<=500:
-        r=random.randint(0,10)
-        #
+        r=random.randint(0,10)#random number to check wether to take the terrain up or down
+        #This gradually takes terrain upward
         if (r<=6):
             x1=x
-            x=random.randint(x,x+3)
-            while x1<x:
+            x=random.randint(x,x+3)#to see how much up it goes(random)
+            while x1<x:#goin to the x position from the current position
                 p1=graphics.Point(x,y)
                 p2=graphics.Point(0,y)
                 l=graphics.Line(p1,p2)
