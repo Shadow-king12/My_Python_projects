@@ -56,12 +56,12 @@ def shadow_noise(x):
                 p1=graphics.Point(x,y)
                 p2=graphics.Point(0,y)
                 l=graphics.Line(p1,p2)
-                l.setFill('pink')
-                l.setOutline('pink')
+                l.setFill('balck')
+                l.setOutline('black')
                 l.draw(win)
                 x1-=0.3
                 y+=0.1
-        #ignore this
+        #This is a chance that terrain stays in the same level
         else:
             p1=graphics.Point(x,y)
             p2=graphics.Point(0,y)
@@ -70,7 +70,7 @@ def shadow_noise(x):
             l.setOutline('black')
             l.draw(win)
             
-def randomg():
+def randomg():#a total random terrain
     i=0
     while i<500:
             x=random.randint(450,700)
