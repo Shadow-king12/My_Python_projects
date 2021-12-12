@@ -46,8 +46,8 @@ def shadow_noise(x):
                 l.setFill('black')
                 l.setOutline('black')
                 l.draw(win)
-                x1+=0.2#change this for varied results try 0.3
-                y+=0.8#change this for varied results try 0.1
+                x1+=0.3#change this for varied results try 0.3
+                y+=0.1#change this for varied results try 0.1
         #this basically tries to take the terrain downwards gradually
         elif (r>=3):
             x1=x
@@ -59,8 +59,8 @@ def shadow_noise(x):
                 l.setFill('balck')
                 l.setOutline('black')
                 l.draw(win)
-                x1-=0.2#change this for varied results try 0.3
-                y+=0.8#change this for varied results try 0.1
+                x1-=0.3#change this for varied results try 0.2
+                y+=0.1#change this for varied results try 0.8
         #This is a chance that terrain stays in the same level
         else:
             p1=graphics.Point(x,y)
